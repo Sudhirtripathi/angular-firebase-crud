@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="blogForm" (ngSubmit)="addBlog()">
+        <label>Blog Title</label>
+        <input type="text" class="form-control" formControlName="btitle">
+        <label>Blog Description</label>
+        <input type="text" class="form-control" formControlName="bdesc">
+
+        <label>Blog Author</label>
+        <input type="text" class="form-control" formControlName="bauthor">
+
+        <label>Blog Date</label>
+        <input type="date" class="form-control" formControlName="bdate">
+        <br>
+        <input type="submit" name="sub" value="Insert Blog" class="btn btn-success">
+
+    </form>
+</div>

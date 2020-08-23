@@ -1,0 +1,19 @@
+<div class="container">
+    <form (ngSubmit)="update()">
+        <input type="hidden" name="$key" [(ngModel)]="blogData.$key">
+        <label>Blog Title</label>
+       
+        <input type="text" class="form-control" name="title" [(ngModel)]="blogData.title">
+        <label>Blog Description</label>
+        <input type="text" class="form-control" name="desc" [(ngModel)]="blogData.desc">
+
+        <label>Blog Author</label>
+        <input type="text" class="form-control" name="author" [(ngModel)]="blogData.author">
+
+        <label>Blog Date</label>
+        <input type="date" class="form-control" name="date" [(ngModel)]="blogData.date">
+        <br>
+        <input type="submit" name="sub" value="Insert Blog" class="btn btn-success">
+
+    </form>
+</div>

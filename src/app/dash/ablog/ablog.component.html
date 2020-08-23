@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>S. No.</th>
+            <th>Blog Title</th>
+            <th>Blog Description</th>
+            <th>Blog Author</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let data of dataArray; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{data.title}}</td>
+            <td>{{data.desc}}</td>
+            <td>{{data.author}}</td>
+            <td>
+                <button class="btn btn-primary" (click)=edit(data)>Edit</button>&nbsp;&nbsp;
+                <button class="btn btn-danger" (click)="delete(data.$key)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

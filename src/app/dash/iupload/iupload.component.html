@@ -1,0 +1,8 @@
+<div class="container">
+
+    <input type="file" (change)="uploadImage($event)" accept=".png,.jpg"> 
+
+    <div *ngIf="fb">
+        <img src="{{fb}}" />
+    </div>
+</div>
